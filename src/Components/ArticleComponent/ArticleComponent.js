@@ -25,7 +25,7 @@ function ArticleComponent() {
             alt="HTML code on a screen"
             className="post-img"
           />
-          <button>❤️ Like</button>
+          <button className="like-button">❤️ Like</button>
         </header>
 
         <p>

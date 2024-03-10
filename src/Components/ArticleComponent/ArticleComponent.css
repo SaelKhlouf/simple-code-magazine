@@ -78,3 +78,14 @@ li:nth-child(even) {
 article p:first-child {
   color: red;
 }
+
+.like-button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+  /* 
+  if you use position: absolute;
+  you can position it directly using top, right, left, bottom
+  top: 50px;
+  left: 50px; */
+}
