@@ -32,11 +32,9 @@ function App() {
       <div className="container">
         <MainHeaderComponent></MainHeaderComponent>
 
-        <div className="row">
-          <ArticleComponent> </ArticleComponent>
+        <ArticleComponent> </ArticleComponent>
 
-          <AsideMenuComponent posts={postsRef.current}></AsideMenuComponent>
-        </div>
+        <AsideMenuComponent posts={postsRef.current}></AsideMenuComponent>
 
         <FooterComponent></FooterComponent>
       </div>

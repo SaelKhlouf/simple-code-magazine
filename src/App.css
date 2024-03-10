@@ -21,6 +21,16 @@ body {
   if you want to use percentage, make sure you handle responsiveness like media queries, then it will work perfectly and for all kind of devices !
   */
   margin: 0 auto; /* means margin-top = margin-bottom = 0 AND margin-left = margin-right = auto */
+
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 15fr 1fr;
+  gap: 20px;
+  grid-template-areas:
+    "main-header main-header"
+    "article aside"
+    "footer footer";
+  align-items: start;
 }
 
 /* SMALLER ELEMENTS */
@@ -114,10 +124,4 @@ button {
   left: 50px; */
   bottom: 50px;
   right: 50px;
-}
-
-.row {
-  display: flex;
-  gap: 2em;
-  align-items: flex-start;
 }

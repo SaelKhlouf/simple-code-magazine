@@ -1,6 +1,5 @@
 article {
-  margin-bottom: 60px;
-  flex-grow: 1; /* we let the article grow and shrink automatically based on available space */
+  grid-area: article;
 }
 
 .post-header {

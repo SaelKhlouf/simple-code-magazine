@@ -3,9 +3,8 @@ aside {
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
   padding: 50px 20px;
-  flex-basis: 30%; /* we should do this instead of specifying width */
-  flex-shrink: 0; /* we don't want this to shrink if container items are larger the container  */
   position: relative;
+  grid-area: aside;
 }
 
 .related {
