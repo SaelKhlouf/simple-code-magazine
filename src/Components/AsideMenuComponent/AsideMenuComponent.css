@@ -1,0 +1,27 @@
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 20px;
+  flex-basis: 30%; /* we should do this instead of specifying width */
+  flex-shrink: 0; /* we don't want this to shrink if container items are larger the container  */
+  position: relative;
+}
+
+.related {
+  list-style: none;
+}
+
+aside::before {
+  /* or h2::before */
+  display: inline-block;
+  content: "TOP";
+  position: absolute; /* top,right,bottom,left they will be relative to the parent that is set to position: relative, which is aside tag */
+  left: -1em;
+  top: -1em;
+  color: black;
+  background-color: #ffe70e;
+  color: #444;
+  font-size: 1.1rem;
+  padding: 0.3em 0.5em;
+}

@@ -1,0 +1,123 @@
+* {
+  /* border-top: 10px solid #1098ad; */
+  margin: 0;
+  padding: 0;
+}
+
+/* PAGE SECTIONS */
+body {
+  color: #444;
+  font-family: sans-serif;
+
+  border-top: 10px solid #1098ad;
+  position: relative;
+}
+
+.container {
+  width: 1200px; /* if you do here width: 50% or any percentage, the page will get messy when zooming in or out, because I still did not handle responsiveness with media queries
+  because when you zoom in the actual css pixel will increase in size. that is why you need to handle responsiveness when using percentages.
+  when you zoom very much, it will be like you are on a mobile phone, that's why you need media queries and responsiveness
+  but when you use 1200px (pixels), even when you zoom, the css pixel will stay the same, and you will have two scrollbars to be able to see the whole page, even if you zoom very much
+  if you want to use percentage, make sure you handle responsiveness like media queries, then it will work perfectly and for all kind of devices !
+  */
+  margin: 0 auto; /* means margin-top = margin-bottom = 0 AND margin-left = margin-right = auto */
+}
+
+/* SMALLER ELEMENTS */
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+} */
+
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+  /* display: inline; */
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+/* article header p {
+  font-style: italic;
+} */
+
+/* ul {
+  list-style: none;
+} */
+
+body {
+  /* background-color: orangered; */
+}
+
+/* Styling links */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  /* color: #777; */
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+
+  position: absolute;
+  /* top: 50px;
+  left: 50px; */
+  bottom: 50px;
+  right: 50px;
+}
+
+.row {
+  display: flex;
+  gap: 2em;
+  align-items: flex-start;
+}

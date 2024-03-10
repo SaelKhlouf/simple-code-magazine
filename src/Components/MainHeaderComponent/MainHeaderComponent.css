@@ -1,0 +1,26 @@
+.main-header {
+  background-color: #f7f7f7;
+  padding: 1.5em 3em;
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header-nav {
+  font-size: 1.2rem;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-header-title {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.main-header-title::first-letter {
+  font-style: normal;
+  margin-right: 0.3em;
+}
